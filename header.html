@@ -15,12 +15,21 @@
 					$(this).hide();
 			});
 		}
+		
+		$.ajax({ 
+			url: "http://ajaxhttpheaders.appspot.com", 
+			dataType: 'jsonp', 
+			success: function(headers) {
+				language = headers['Accept-Language'];
+				selectLanguage(language);
+			}
+		});
 	</script>
 	<body>
 		<header>
 			<a href="index.php"><div id="logo"></div></a>
-			<a onclick="selectLanguage('fr')" lang="en">français</a>
-			<a onclick="selectLanguage('en')" lang="fr">english</a>
+			<a onclick="selectLanguage('fr')" lang="en" id="language-change">français</a>
+			<a onclick="selectLanguage('en')" lang="fr" id="language-change">english</a>
 			<nav>
 				<a href="game.php">Games</a>
 				<span class="leftverticalline"><a href="about.php">About me</a></span>
