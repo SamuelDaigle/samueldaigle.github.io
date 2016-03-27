@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<title>Samuel Daigle's portfolio</title>
@@ -15,15 +15,6 @@
 					$(this).hide();
 			});
 		}
-		
-		$.ajax({ 
-			url: "http://ajaxhttpheaders.appspot.com", 
-			dataType: 'jsonp', 
-			success: function(headers) {
-				language = headers['Accept-Language'];
-				selectLanguage(language);
-			}
-		});
 	</script>
 	<body>
 		<header>
