@@ -6,6 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="css/style_general.css" />
 		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	</head>
+	<script>
+		function selectLanguage(language) {
+			$("[lang]").each(function () {
+				if ($(this).attr("lang") == language)
+					$(this).show();
+				else
+					$(this).hide();
+			});
+		}
+	</script>
 	<body>
 		<header>
 			<a href="index.php"><div id="logo"></div></a>
