@@ -475,7 +475,7 @@ function GetFallingStarText()
 		$array[] = "The water waves with displacement mapping";
 		$array[] = "The water is translucent and colored";
 		$array[] = "Water has light reflection";
-		$array[] = "Player movements change when underwater";
+		$array[] = "Player's animation changes when underwater";
 		$array[] = "The display has a blue tint when the player is underwater";
 		$array[] = "Added sun reflection lenses";
 		$array[] = "Added a HUD for the player's life";
