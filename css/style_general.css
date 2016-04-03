@@ -21,6 +21,7 @@ header
 header a:hover
 {
 	color: dodgerblue;
+	cursor: pointer;
 }
 
 blockquote
