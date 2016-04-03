@@ -179,15 +179,17 @@ function GetAboutText()
 	{
 		$array[] = "OBJECTIF";
 		$array[] = "Un de mes principaux objectifs est de me spécialiser dans la programmation graphique afin d'y travailler dès que possible.
-					Afin d'atteindre cet objectif, j'ai commencé à travailler sur mon propre moteur en 2013, me permettant d'en apprendre davantage sur les bibliothèques graphiques et sur les patrons de conception.";
+					Afin d'atteindre cet objectif, j'ai commencé à travailler sur mon propre moteur en 2013, me permettant d'en apprendre davantage sur les 
+					bibliothèques graphiques et sur les patrons de conception.";
 		$array[] = "ÉDUCATION SCOLAIRE";
-		$array[] = "Depuis 2013, j'ai étudié au Cégep de Sainte-Foy en <i>techniques de l'informatique</i>. J'ai appris la programmation web, le développement de serveur et la programmation de jeu.
-					En 2015, j'ai intégré le programme spécialisé en jeux vidéo afin de simuler un environnement de travail réel, de créer plusieurs jeux et de travailler avec les moteurs existants.";
-		$array[] = "EXPERTISE AVEC LES LANGAGES";
+		$array[] = "Depuis 2013, j'ai étudié au Cégep de Sainte-Foy en <i>techniques de l'informatique</i>. J'ai appris la programmation web, le développement 
+					de serveur et la programmation de jeu. En 2015, j'ai intégré le programme spécialisé en jeux vidéo afin de simuler un environnement de travail 
+					réel, de créer plusieurs jeux et de travailler avec les moteurs existants.";
+		$array[] = "EXPERTISE DES LANGAGES";
 		$array[] = "Au cégep, j'ai appris plusieurs langages de programmation et les meilleures pratiques pour chacun d'eux. Je me concentre principalement sur le C++ à l'extérieur 
 					des cours, car je peux gérer tout ce que je veux sans qu'il soit contrôlé automatiquement par le langage. Je peux facilement dire que je suis à l'aise avec 
 					la plupart des langages de programmation et je sais quand utiliser le bon langage.";
-		$array[] = "EXPÉRIENCE AVEC LES MOTEURS DE JEU";
+		$array[] = "EXPÉRIENCE DES MOTEURS DE JEU";
 		$array[] = "Pendant le développement de mon propre moteur, je m'interrogeais sur le fonctionnent concret des moteurs de jeu. Alors, durant l'été 2015, j'ai développé mon premier jeu 3D réalisé dans Unreal Engine appelé <a href=\"falling-star.php\" class=\"dodgerblue-hover\"><i>Falling Star</i></a>. 
 					J'ai pu y trouver toute l'information nécessaire lors de mon expérience.
 					Dès que les cours ont recommencés, mon équipe et moi avions un contrat pour terminer un « <a href=\"ducktators.php\" class=\"dodgerblue-hover\"><i>Tower Offense</i></a> » en multijoueur local faite 
@@ -200,7 +202,7 @@ function GetAboutText()
 					
 		$array[] = "EXPÉRIENCE DE TRAVAIL";
 		$array[] = "Été 2015<br>Été 2014";
-		$array[] = "Testeur de Jeux-Video – Qualité Assurance Québec";
+		$array[] = "Testeur de jeux video – Qualité Assurance Québec";
 		$array[] = "Sens de l’observation, bonne collaboration d’équipe, rédiger des textes en anglais, rapidité d’exécution.";
 		
 		$array[] = "Automne 2014";

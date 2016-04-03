@@ -1,0 +1,155 @@
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style_about.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script> 
+		$(function(){
+		  $("#header").load("header.html"); 
+		  $("#footer").load("footer.html"); 
+		});
+	</script> 
+</head>
+<body>
+	<!--	include("donut-chart.php");
+		include("half-donut-chart.php");
+		include("bar-chart.php"); -->
+		<section>
+			<div id="objective">
+				<h2><span lang="en">OBJECTIVE</span>
+			 <span lang="fr" hidden>OBJECTIF</span></h2>
+				<hr>
+				<p><span lang="en">One of my main goals is to specialize myself in graphics programming to work as soon as possible. In
+					order to achieve this goal, I started working on my own engine since I started programming, allowing me to practice
+					a lot and learning more out of graphic libraries and design patterns.</span>
+			<span lang="fr" hidden>Un de mes principaux objectifs est de me spécialiser dans la programmation graphique afin d'y travailler dès que possible.
+					Afin d'atteindre cet objectif, j'ai commencé à travailler sur mon propre moteur en 2013, me permettant d'en apprendre davantage sur les 
+					bibliothèques graphiques et sur les patrons de conception.</span></p>
+			</div>
+		</section>
+	
+		<section>
+			<div id="school">
+				<h2><span lang="en">SCHOOL EXPERIENCE</span>
+			 <span lang="fr" hidden>ÉDUCATION SCOLAIRE</span></h2>
+				<hr>
+				<p><span lang="en">Since 2013, I've been studying at the Cégep de Sainte-Foy in computer technology. 
+					I learned web programming, server development and game programming.
+					In 2015, I joined the video game development program in order to simulate a real work environment,
+					to create multiple games and to work with existing engines.</span>
+			 <span lang="fr" hidden>Depuis 2013, j'ai étudié au Cégep de Sainte-Foy en <i>techniques de l'informatique</i>. J'ai appris la programmation web, le 
+					développement de serveur et la programmation de jeu. En 2015, j'ai intégré le programme spécialisé en jeux vidéo afin de simuler un 
+					environnement de travail réel, de créer plusieurs jeux et de travailler avec les moteurs existants.</span></p>
+			</div>
+			
+			<img src="img/cegep.png" id="cegep-logo"/>
+			
+			
+			<!-- Doughnut Pie Chart -->
+			<div id="container"></div>
+			<div id="language">
+				<h2><span lang="en">LANGUAGE EXPERTISE</span>
+			 <span lang="fr" hidden>EXPERTISE DES LANGAGES</span></h2>
+				<hr>
+				<p><span lang="en">I learned several programming languages and the best practices for each of them. The main language I focus outside 
+					of courses is C++. It is my favorite language as I can manage anything I want without it being in the way. I can easily say that 
+					I'm at ease with most programming languages and I know when to use which language.</span>
+			 <span lang="fr" hidden>Au cégep, j'ai appris plusieurs langages de programmation et les meilleures pratiques pour chacun d'eux. Je me concentre principalement sur le C++ à l'extérieur 
+					des cours, car je peux gérer tout ce que je veux sans qu'il soit contrôlé automatiquement par le langage. Je peux facilement dire que je suis à l'aise avec 
+					la plupart des langages de programmation et je sais quand utiliser le bon langage.</span></p>
+			</div>
+			
+			<!-- Half Doughnut Pie Chart -->
+			<div id="container-half"></div>
+			<div id="engine">
+				<h2><span lang="en">ENGINE EXPERIENCE</span>
+			 <span lang="fr" hidden>EXPÉRIENCE DES MOTEURS DE JEU</span></h2>
+				<hr>
+				<p><span lang="en">During the development of my own engine, I wondered how other engines concretely worked. In summer 2015, I started working in my free time on my first 3D game made in Unreal Engine called 
+					<a href=\"falling-star.php\" class=\"dodgerblue-hover\"><i>Falling Star</i></a>. After school began, me and my team had a contract to finish a <a href=\"ducktators.php\" class=\"dodgerblue-hover\">
+					<i>Tower Offense</i></a> in local 4-player co-op made with Unity.</span>
+			 <span lang="fr" hidden>Pendant le développement de mon propre moteur, je m'interrogeais sur le fonctionnent concret des moteurs de jeu. Alors, durant l'été 2015, j'ai développé mon premier jeu 3D réalisé dans Unreal Engine appelé <a href=\"falling-star.php\" class=\"dodgerblue-hover\"><i>Falling Star</i></a>. 
+					J'ai pu y trouver toute l'information nécessaire lors de mon expérience.
+					Dès que les cours ont recommencés, mon équipe et moi avions un contrat pour terminer un « <a href=\"ducktators.php\" class=\"dodgerblue-hover\"><i>Tower Offense</i></a> » en multijoueur local faite 
+					avec Unity.</span></p>
+			</div>
+			
+			<!-- Basic Column Chart -->
+			<div id="container-bar"></div>
+			<div id="research">
+				<h2><span lang="en">RESEARCH INTERESTS</span>
+			 <span lang="fr" hidden>INTERÊTS DE RECHERCHE</span></h2>
+				<hr>
+				<p><span lang="en">To make my dreams successes, I love to search for new technologies and methods. This is why I read a lot on tutorials, watch online university presentations,
+					listen to conferences from big companies. I even bought two books: <i>Clean Code</i> and <i>Game Programming Gems I</i>. I also developped a small virtual reality demo with Google
+					Cardboard on Unity.</span>
+			 <span lang="fr" hidden>Pour faire de mes rêves un succès, je recherche constamment de nouvelles méthodes et technologies. 
+					C'est pourquoi je visionne plusieurs présentations universitaires en ligne et complète plusieurs tutoriels. 
+					J'ai d'ailleurs acheté deux livres: <i>Clean Code</i> et <i>Game Programming Gems I</i>. J'ai aussi développé
+					un petit projet sur la réalité virtuelle avec Google Cardboard dans Unity.</span></p>
+			</div>
+			
+			<div id="work">
+				<h2><span lang="en">WORK HISTORY</span>
+			 <span lang="fr" hidden>EXPÉRIENCE DE TRAVAIL</span></h2>
+				<hr>
+				<br>
+				<br>
+				<table id="work-showcase">
+					<tr>
+						<td class="date"><span lang="en">Summer 2015<br>Summer 2014</span>
+									<span lang="fr" hidden>Été 2015<br>Été 2014</span></td>
+						<td class="description">
+						<b><span lang="en">Video Game Tester – Quality Assurance Quebec</span>
+					<span lang="fr" hidden>Testeur de jeux video – Qualité Assurance Québec</span></b><br>
+						<p><span lang="en">Observation skills, good team collaboration, write texts in English, timeliness.</span>
+					<span lang="fr" hidden>Sens de l’observation, bonne collaboration d’équipe, rédiger des textes en anglais, rapidité d’exécution.</span></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="date"><span lang="en">Autumn 2014</span>
+									<span lang="fr" hidden>Automne 2014</span></td>
+						<td class="description">
+						<b><span lang="en">Computer Tutor – Cegep Sainte-Foy</span>
+					<span lang="fr" hidden>Tuteur en informatique – Cégep Sainte-Foy</span></b>
+						<p><span lang="en">Helping people, listen, advise and guide others.</span>
+					<span lang="fr" hidden>Aider, écouter, conseiller et guider les gens.</span></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<hr>
+			<br>
+			<br>
+			
+			<div id="participation">
+				<table id="participation">
+					<tr>
+						<td><img src="img/extralife.png"/></td>
+						<td class="description">
+						<b><span lang="en">Participation in Extra Life</span>
+					<span lang="fr" hidden>Participation à l'Extra Life</span></b><br>
+						<p><span lang="en">Extra Life is an event where everyone can join and play 24 hours straight while streaming to donate to charity.</span>
+					<span lang="fr" hidden>Extra Life est un événement où tout le monde peut se rejoindre et jouer 24 heures d'affilées afin de faire des dons pour les enfants malades.</span></p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/handshake.png" style="width: 85%; height: 70%; padding-left: 25px;"/></td>
+						<td class="description">
+						<b><span lang="en">Teamwork makes better dreamwork!</span>
+					<span lang="fr" hidden>Le travail d'équipe donne un travail de rêve!</span></b><br>
+						<p><span lang="en">For me, a good team spirit is necessary for development of a project and greatly helps to succeed.</span>
+					<span lang="fr" hidden>Pour moi, un bon esprit d'équipe est nécessaire au développement d'un projet et aide grandement au succès.</span></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+		</section>	
+<div id="footer"></div>
