@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="css/style_index.css" />
 <link href="js/dots.jr" />
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script> 
+<script type="text/javascript"> 
 $(function(){
   $("#header").load("header.html"); 
   $("#footer").load("footer.html"); 
@@ -17,21 +17,22 @@ function OnLoad()
 	var ctx = canvas.getContext('2d');
 	
 	ctx.fillStyle = "white";
-	ctx.fillRect (10, 20, 50, 50);
+	ctx.fillRect (70, 20, 50, 50);
 }
 </script> 
 </head>
 <body onload="OnLoad();">
 <div id="header"></div>
 		<section>
+			<canvas id="dotscanvas"></canvas>
 			<div class="page-half-height" >
-				<div id="title"> 
-					<!--<span lang="en">Portfolio of </span>
+				<!--<div id="title"> 
+					<span lang="en">Portfolio of </span>
 					<span lang="fr" hidden>Portfolio de </span>
 					<span id="deeppink">Samuel Daigle</span></div>
 					<div id="subtitle"><span lang="en">A VIDEO GAME PROGRAMMER</span>
 								<span lang="fr" hidden>UN PROGRAMMEUR DE JEU</span></div> -->
-				<canvas id="dotscanvas"></canvas>
+				
 			</div>
 		</section>
 		
