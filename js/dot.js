@@ -4,6 +4,11 @@ class Dot {
 	this.y = y;
   }
   
+  update() {
+	  x += 1;
+	  y -= 1;
+  }
+  
   draw() {
     update();
 	
@@ -11,10 +16,5 @@ class Dot {
 	ctx.beginPath();
 	ctx.arc(spacing * x, canvas.height - spacing * y - 5, 10, 0, Math.PI * 2, true);
 	ctx.fill();
-  }
-  
-  update() {
-	  x += 1;
-	  y -= 1;
-  }
+  }  
 }
