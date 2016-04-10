@@ -15,5 +15,5 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 		ctx.fill();
     }
 	
-	//var loopTimer = setTimeout('draw('+nbX+','+spacing+','+randomMin+','+randomMax+')', 20);
+	var loopTimer = setTimeout('draw('+nbX+','+spacing+','+randomMin+','+randomMax+')', 20);
 }
