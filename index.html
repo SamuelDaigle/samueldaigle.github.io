@@ -11,7 +11,7 @@ $(function(){
 
 function OnLoad()
 {
-	var canvas = document.getElementById("canvas");
+	var canvas = document.getElementById("dotscanvas");
     if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
 
@@ -27,7 +27,7 @@ function OnLoad()
 <body onload="OnLoad();">
 <div id="header"></div>
 		<section>
-			<canvas id="canvas"></canvas>
+			<canvas id="dotscanvas"></canvas>
 			<div class="page-half-height" >
 				<!--<div id="title"> 
 					<span lang="en">Portfolio of </span>
