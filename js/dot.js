@@ -4,12 +4,12 @@ class Dot {
 	this.y = y;
   }
   
-  update() {
+  function update() {
 	  x += 1;
 	  y -= 1;
   }
   
-  draw() {
+  function draw() {
     update();
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 / y + ")";
