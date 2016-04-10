@@ -12,6 +12,12 @@ $(function(){
 function OnLoad()
 {
 	DrawDots(10, 5, 5, 10);
+	
+	var canvas = document.getElementById('dotscanvas');
+	var ctx = canvas.getContext('2d');
+	
+	ctx.fillStyle = "white";
+	ctx.fillRect (10, 20, 50, 50);
 }
 </script> 
 </head>
