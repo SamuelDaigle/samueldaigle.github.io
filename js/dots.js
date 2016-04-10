@@ -7,6 +7,8 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
     if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
 		
+		ctx.clearRect(0,0,canvas.width, canvas.height);
+		
 		ctx.fillStyle = "rgba(30, 144, 255, 0.25)";
 		ctx.beginPath();
 		ctx.arc(10, 10, 10, 0, Math.PI * 2, true);
