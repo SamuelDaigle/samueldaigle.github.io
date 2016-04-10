@@ -10,7 +10,7 @@ $(function(){
 
 function OnLoad()
 {
-	DrawDots(25, 50, 5, 15);
+	DrawDots(100, 50, 5, 15);
 }
 
 function DrawDots(nbX, spacing, randomMin, randomMax)
@@ -30,7 +30,7 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 			{
 				ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 / y + ")";
 				ctx.beginPath();
-				ctx.arc(spacing * x, canvas.height - spacing * y, 10, 0, Math.PI * 2, true);
+				ctx.arc(spacing * x, canvas.height - spacing * y - 5, 5, 0, Math.PI * 2, true);
 				ctx.fill();
 			}
 		}
