@@ -11,18 +11,7 @@ $(function(){
 
 function OnLoad()
 {
-	var canvas = document.getElementById("dotscanvas");
-	canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-			
-    if (canvas.getContext) {
-        var ctx = canvas.getContext("2d");
-		
-		ctx.fillStyle = "rgba(30, 144, 255, 0.25)";
-		ctx.beginPath();
-		ctx.arc(10, 10, 10, 0, Math.PI * 2, true);
-		ctx.fill();
-    }
+	DrawDots(50, 50, 5, 15);
 }
 </script> 
 </head>
