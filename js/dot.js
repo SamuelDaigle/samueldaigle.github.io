@@ -5,8 +5,8 @@ class Dot {
   }
   
   draw(ctx) {
-    this.x += 1;
-	this.y -= 1;
+    this.x += Math.floor((Math.random() * 1) - 1); // -1 to 1
+	this.y -= Math.floor((Math.random() * 1) - 1); // -1 to 1;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 + ")";
 	ctx.beginPath();
