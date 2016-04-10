@@ -4,7 +4,7 @@ class Dot {
 	this.y = y;
   }
   
-  draw() {
+  draw(ctx) {
     this.x += 1;
 	this.y -= 1;
 	
