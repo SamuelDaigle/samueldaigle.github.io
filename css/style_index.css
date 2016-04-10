@@ -42,7 +42,7 @@ h2
 
 #dotscanvas
 {
-	position: relative;
+	position: absolute;
 	z-index: 0;
 }
 
