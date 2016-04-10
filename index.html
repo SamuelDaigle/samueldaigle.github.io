@@ -2,6 +2,7 @@
 <title></title>
 <link rel="stylesheet" type="text/css" href="css/style_index.css" />
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/dot.js"></script>
 <script type="text/javascript"> 
 $(function(){
   $("#header").load("header.html"); 
@@ -24,19 +25,18 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 		
 		ctx.clearRect(0,0,canvas.width, canvas.height);
 		
+		var particleTable = [];
+		
 		for	(x = 0; x < nbX; x++)
 		{
-			var y = Math.floor((Math.random() * 10) + 3);
-			ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 / y + ")";
-			ctx.beginPath();
-			ctx.arc(spacing * x, canvas.height - spacing * y - 5, 10, 0, Math.PI * 2, true);
-			ctx.fill();
-			
+			particleTable[x] = new Dot(x, canvas.height);
 		}
     }
 	
 	var loopTimer = setTimeout('draw('+nbX+','+spacing+','+randomMin+','+randomMax+')', 20);
 }
+
+
 </script> 
 </head>
 <body onload="OnLoad();">
