@@ -10,7 +10,7 @@ $(function(){
 
 function OnLoad()
 {
-	DrawDots(100, 50, 5, 15);
+	DrawDots(50, 50, 5, 15);
 }
 
 function DrawDots(nbX, spacing, randomMin, randomMax)
@@ -26,13 +26,12 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 		
 		for	(x = 0; x < nbX; x++)
 		{
-			for (y = 0; y < randomMax; y++)
-			{
-				ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 / y + ")";
-				ctx.beginPath();
-				ctx.arc(spacing * x, canvas.height - spacing * y - 5, 5, 0, Math.PI * 2, true);
-				ctx.fill();
-			}
+			var y = Math.floor((Math.random() * 10) + 3);
+			ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 / y + ")";
+			ctx.beginPath();
+			ctx.arc(spacing * x, canvas.height - spacing * y - 5, 10, 0, Math.PI * 2, true);
+			ctx.fill();
+			
 		}
     }
 	
