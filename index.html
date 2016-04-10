@@ -11,15 +11,6 @@ $(function(){
   $("#footer").load("footer.html"); 
 });
 
-function OnLoad()
-{
-	for	(x = 0; x < 50; x++)
-	{
-		particleTable[x] = new Dot(x, window.innerHeight / 2);
-	}
-	DrawDots(50, 50, 5, 15);
-}
-
 function DrawDots(nbX, spacing, randomMin, randomMax)
 {
 	var canvas = document.getElementById("dotscanvas");
@@ -40,7 +31,14 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 	var loopTimer = setTimeout('draw('+nbX+','+spacing+','+randomMin+','+randomMax+')', 20);
 }
 
-
+function OnLoad()
+{
+	for	(x = 0; x < 50; x++)
+	{
+		particleTable[x] = new Dot(x, window.innerHeight / 2);
+	}
+	DrawDots(50, 50, 5, 15);
+}
 </script> 
 </head>
 <body onload="OnLoad();">
