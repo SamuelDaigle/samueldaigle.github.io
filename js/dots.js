@@ -9,10 +9,16 @@ function DrawDots(nbX, spacing, randomMin, randomMax)
 		
 		ctx.clearRect(0,0,canvas.width, canvas.height);
 		
-		ctx.fillStyle = "rgba(30, 144, 255, 0.25)";
-		ctx.beginPath();
-		ctx.arc(10, 10, 10, 0, Math.PI * 2, true);
-		ctx.fill();
+		for	(x = 0; x < nbX; x++)
+		{
+			for (y = 0; y < randomMin; y++)
+			{
+				ctx.fillStyle = "rgba(30, 144, 255, 0.25)";
+				ctx.beginPath();
+				ctx.arc(spacing * x, spacing * y, 10, 0, Math.PI * 2, true);
+				ctx.fill();
+			}
+		}
     }
 	
 	var loopTimer = setTimeout('draw('+nbX+','+spacing+','+randomMin+','+randomMax+')', 20);
