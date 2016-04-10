@@ -11,7 +11,9 @@ $(function(){
 
 function OnLoad()
 {
-	DrawDots(50, 50, 5, 15);
+	$.getscript("js/dots.js",function(){
+		DrawDots(50, 50, 5, 15);
+	});
 }
 </script> 
 </head>
