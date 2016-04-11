@@ -23,9 +23,11 @@ function SpawnDots()
 	var spacing = 50;
 	for	(x = 0; x < nbX; x++)
 	{
-		particleTable[x] = new Dot(x * spacing, window.innerHeight / 2);
+		particleTable[particleTable.lenght] = new Dot(x * spacing, window.innerHeight / 2);
 	}
 	//var loopTimer = setTimeout('SpawnDots()', 400);
+	
+	alert(particleTable.lenght);
 }
 
 function DrawDots()
