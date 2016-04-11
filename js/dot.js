@@ -4,7 +4,7 @@ class Dot {
 	this.y = y;
 	this.minX =  x - 10;
 	this.maxX = x + 10;
-	this.direction = Math.floor((Math.random() * 15) - 7);
+	this.direction = Math.floor((Math.random() * 51) - 25);
 	this.alpha = 30;
   }
   
@@ -12,7 +12,7 @@ class Dot {
 	this.direction = this.direction / 2;
   
     this.x += this.direction;
-	this.y -= 1;
+	this.y -= 1.5;
 	
 	this.alpha -= 0.10;
 	
