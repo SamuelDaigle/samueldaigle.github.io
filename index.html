@@ -47,11 +47,10 @@ function DrawDots()
 			if (particles[x] != null)
 			{
 				particles[x].draw(ctx);
-			}
-			
-			if (particles[x].alpha <= 0)
-			{
-				delete particles[x]
+				if (particles[x].alpha <= 0)
+				{
+					delete particles[x]
+				}
 			}
 		}
     }
