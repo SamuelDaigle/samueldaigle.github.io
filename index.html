@@ -35,7 +35,7 @@ function DrawDots()
 {
 	var canvas = document.getElementById("dotscanvas");
 	canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight * 2;
 			
     if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
@@ -61,7 +61,7 @@ function DrawDots()
 </script> 
 </head>
 <body onload="OnLoad();">
-	
+	<div id="header"></div>
 		<section>
 			<canvas id="dotscanvas"></canvas>
 			<div class="page-half-height">
