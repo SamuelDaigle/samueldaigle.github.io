@@ -4,15 +4,15 @@ class Dot {
 	this.y = y;
 	this.minX =  x - 10;
 	this.maxX = x + 10;
-	this.direction = Math.floor((Math.random() * 2) - 1);
+	this.direction = Math.floor((Math.random() * 5) - 2);
 	this.alpha = 30;
   }
   
-  draw(ctx) {
-	this.direction = Math.floor((Math.random() * 5) - 3);
-	
+  draw(ctx) {	
+	this.direction = this.direction / 2;
+  
     this.x += this.direction;
-	this.y += 1;
+	this.y -= 1;
 	
 	this.alpha -= 0.10;
 	
