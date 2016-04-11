@@ -49,7 +49,7 @@ function DrawDots()
 			if (particles[x].alpha <= 0)
 			{
 				nbParticles -= 1;
-				delete particles[x];
+				particles.shift(x);
 			}
 		}
     }
