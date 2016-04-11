@@ -9,7 +9,7 @@ class Dot {
   }
   
   draw(ctx) {
-	this.direction = Math.floor((Math.random() * 2) - 1);
+	this.direction = Math.floor((Math.random() * 5) - 3);
 	
     this.x += this.direction;
 	this.y -= 1;
