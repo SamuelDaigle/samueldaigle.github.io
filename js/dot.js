@@ -2,9 +2,9 @@ class Dot {
   constructor(x, y) {
     this.x = x;
 	this.y = y;
-	this.minX =  x - 5;
-	this.maxX = x + 5;
-	this.direction = 1;
+	this.minX =  x - 10;
+	this.maxX = x + 10;
+	this.direction = Math.floor((Math.random() * 5) - 2);
   }
   
   draw(ctx) {
