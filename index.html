@@ -44,12 +44,14 @@ function DrawDots()
 		
 		for	(x = 0; x < nbParticles; x++)
 		{
-			particles[x].draw(ctx);
+			if (particles[x] != null)
+			{
+				particles[x].draw(ctx);
+			}
 			
 			if (particles[x].alpha <= 0)
 			{
-				nbParticles -= 1;
-				particles.shift(x);
+				delete particles[x]
 			}
 		}
     }
