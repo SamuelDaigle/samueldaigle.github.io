@@ -10,7 +10,7 @@ class Dot {
     this.x += this.lookatX;
 	this.y -= this.lookatY;
 	
-	ctx.fillStyle = "rgba(30, 144, 255, " + -this.y + window.innerHeight / 2 + ")";
+	ctx.fillStyle = "rgba(30, 144, 255, " + -this.y + window.innerHeight + ")";
 	ctx.beginPath();
 	ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, true);
 	ctx.fill();
