@@ -3,7 +3,7 @@ class Dot {
     this.x = x;
 	this.y = y;
 	this.lookatX = Math.floor(Math.random() * 6) - 3;
-	this.lookatY = Math.floor(Math.random() * 3);
+	this.lookatY = Math.floor(Math.random() * 3) + 1;
   }
   
   draw(ctx) {
