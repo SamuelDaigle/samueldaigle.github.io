@@ -12,7 +12,7 @@ class Dot {
 	this.direction = Math.floor((Math.random() * 5) - 3);
 	
     this.x += this.direction;
-	this.y -= 1;
+	this.y += 1;
 	
 	this.alpha -= 0.10;
 	
