@@ -5,7 +5,7 @@ class Dot {
   }
   
   draw(ctx) {
-    this.x += Math.floor((Math.random() * 2) - 2); // -1 to 1
+    this.x += Math.floor((Math.random() * 2)) -  Math.floor((Math.random() * 2)); // -1 to 1
 	this.y -= 1;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 + ")";
