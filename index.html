@@ -4,7 +4,8 @@
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="js/dot.js"></script>
 <script type="text/javascript"> 
-var particleTable = [];
+var particles = [];
+var nbParticles = 0;
 
 $(function(){
   $("#header").load("header.html"); 
@@ -23,10 +24,11 @@ function SpawnDots()
 	var spacing = 50;
 	for	(x = 0; x < nbX; x++)
 	{
-		particleTable.push(new Dot(x * spacing, window.innerHeight / 2));
+		nbParticles += 1;
+		particles.push(new Dot(x * spacing, window.innerHeight / 2));
 	}
 	
-	//var loopTimer = setTimeout('SpawnDots()', 400);
+	var loopTimer = setTimeout('SpawnDots()', 400);
 }
 
 function DrawDots()
@@ -40,10 +42,9 @@ function DrawDots()
 		
 		ctx.clearRect(0,0,canvas.width, canvas.height);
 		
-		var particleTableLength = particleTable.lenght;
-		for	(x = 0; x < 50; x++)
+		for	(x = 0; x < nbParticles; x++)
 		{
-			particleTable[x].draw(ctx);
+			particles[x].draw(ctx);
 		}
     }
 	var loopTimer = setTimeout('DrawDots()', 20);
