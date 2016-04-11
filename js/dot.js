@@ -9,7 +9,7 @@ class Dot {
   
   draw(ctx) {
     this.x += this.direction;
-	this.y -= 1;
+	this.y += 1;
 	
 	if (this.x > this.maxX)
 	{
