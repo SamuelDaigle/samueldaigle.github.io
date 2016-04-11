@@ -5,6 +5,7 @@ class Dot {
 	this.minX =  x - 10;
 	this.maxX = x + 10;
 	this.direction = Math.floor((Math.random() * 2) - 1);
+	this.alpha = 100;
   }
   
   draw(ctx) {
@@ -19,6 +20,8 @@ class Dot {
 	{
 		this.direction = 1;
 	}
+	
+	this.alpha -= 1;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, 1)";
 	ctx.beginPath();
