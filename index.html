@@ -13,16 +13,22 @@ $(function(){
 
 function OnLoad()
 {
+	SpawnDots()
+	DrawDots();
+}
+
+function SpawnDots()
+{
 	var nbX = 50;
 	var spacing = 50;
-	for	(x = 0; x < nbX; x++)
+	for	(x = particleTable.length(); x < particleTable.length() + nbX; x++)
 	{
 		particleTable[x] = new Dot(x * spacing, window.innerHeight / 2);
 	}
-	DrawDots(nbX, spacing);
+	var loopTimer = setTimeout('SpawnDots()', 400);
 }
 
-function DrawDots(nbX, spacing)
+function DrawDots()
 {
 	var canvas = document.getElementById("dotscanvas");
 	canvas.width = window.innerWidth;
@@ -33,13 +39,13 @@ function DrawDots(nbX, spacing)
 		
 		ctx.clearRect(0,0,canvas.width, canvas.height);
 		
-		for	(x = 0; x < nbX; x++)
+		for	(x = 0; x < particleTable.lenght(); x++)
 		{
 			particleTable[x].draw(ctx);
 		}
     }
 	
-	var loopTimer = setTimeout('DrawDots('+nbX+','+spacing+')', 20);
+	var loopTimer = setTimeout('DrawDots()', 20);
 }
 
 
