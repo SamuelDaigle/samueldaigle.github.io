@@ -20,9 +20,7 @@ class Dot {
 		this.direction = 1;
 	}
 	
-	var particuleHeight = window.innerHeight - this.y;
-	
-	ctx.fillStyle = "rgba(30, 144, 255, " + 1 + ")";
+	ctx.fillStyle = "rgba(30, 144, 255, 1)";
 	ctx.beginPath();
 	ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, true);
 	ctx.fill();
