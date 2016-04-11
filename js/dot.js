@@ -2,8 +2,8 @@ class Dot {
   constructor(x, y) {
     this.x = x;
 	this.y = y;
-	this.lookatX = Math.floor(Math.random() * 11) - 5;
-	this.lookatY = Math.floor(Math.random() * 11) - 5;
+	this.lookatX = Math.floor(Math.random() * 6) - 3;
+	this.lookatY = Math.floor(Math.random() * 6) - 3;
   }
   
   draw(ctx) {
