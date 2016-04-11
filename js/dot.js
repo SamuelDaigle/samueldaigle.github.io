@@ -10,7 +10,7 @@ class Dot {
     this.x += this.lookatX;
 	this.y -= this.lookatY;
 	
-	particuleHeight = window.innerHeight - this.y;
+	var particuleHeight = window.innerHeight - this.y;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + -particuleHeight + 200 + ")";
 	ctx.beginPath();
