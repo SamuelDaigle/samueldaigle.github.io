@@ -8,7 +8,7 @@ class Dot {
   
   draw(ctx) {
     this.x += this.lookatX;
-	this.y -= this.lookatY;
+	this.y += this.lookatY;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 + ")";
 	ctx.beginPath();
