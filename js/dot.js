@@ -5,7 +5,7 @@ class Dot {
 	this.minX =  x - 10;
 	this.maxX = x + 10;
 	this.direction = Math.floor((Math.random() * 51) - 25);
-	this.alpha = 30;
+	this.alpha = Math.floor((Math.random() * 50) + 30);
   }
   
   draw(ctx) {	
