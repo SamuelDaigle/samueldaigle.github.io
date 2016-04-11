@@ -10,7 +10,7 @@ class Dot {
   
   draw(ctx) {
     this.x += this.direction;
-	this.y += 1;
+	this.y -= 1;
 	
 	if (this.x > this.maxX)
 	{
@@ -23,7 +23,7 @@ class Dot {
 	
 	this.alpha -= 1;
 	
-	ctx.fillStyle = "rgba(30, 144, 255, 1)";
+	ctx.fillStyle = "rgba(30, 144, 255, " + this.alpha + ")";
 	ctx.beginPath();
 	ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, true);
 	ctx.fill();
