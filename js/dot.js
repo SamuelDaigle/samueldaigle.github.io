@@ -2,13 +2,23 @@ class Dot {
   constructor(x, y) {
     this.x = x;
 	this.y = y;
-	this.lookatX = Math.floor(Math.random() * 6) - 3;
-	this.lookatY = (Math.floor(Math.random() * 25) + 5) / 5;
+	this.minX =  x - 5;
+	this.maxX = x + 5;
+	this.direction = 1;
   }
   
   draw(ctx) {
-    this.x += this.lookatX;
+    this.x += this.direction;
 	this.y -= this.lookatY;
+	
+	if (this.x > this.maxX)
+	{
+		this.direction = -1;
+	}
+	else if (this.x < this.minX)
+	{
+		this.direction = 1;
+	}
 	
 	var particuleHeight = window.innerHeight - this.y;
 	
