@@ -2,11 +2,13 @@ class Dot {
   constructor(x, y) {
     this.x = x;
 	this.y = y;
+	this.lookatX = Math.floor(Math.random() * 11) - 5;
+	this.lookatY = Math.floor(Math.random() * 11) - 5;
   }
   
   draw(ctx) {
-    this.x += Math.floor((Math.random() * 2)) -  Math.floor((Math.random() * 2)); // -1 to 1
-	this.y -= 1;
+    this.x +=  lookatX;
+	this.y -= lookatY;
 	
 	ctx.fillStyle = "rgba(30, 144, 255, " + 0.25 + ")";
 	ctx.beginPath();
