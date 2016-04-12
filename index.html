@@ -6,11 +6,22 @@
 <script type="text/javascript"> 
 var particles = [];
 var nbParticles = 0;
+var focused = true;
 
 $(function(){
   $("#header").load("header.html"); 
   $("#footer").load("footer.html"); 
 });
+
+function onBlur() {
+	focused = false;
+};
+function onFocus(){
+	focused = true;
+};
+
+window.onfocus = onFocus;
+window.onblur = onBlur;
 
 function OnLoad()
 {
@@ -22,10 +33,13 @@ function SpawnDots()
 {
 	var nbX = 50;
 	var spacing = 50;
-	for	(x = 0; x < nbX; x++)
+	if	(focused)
 	{
-		nbParticles += 1;
-		particles.push(new Dot(x * spacing, window.innerHeight));
+		for	(x = 0; x < nbX; x++)
+		{
+			nbParticles += 1;
+			particles.push(new Dot(x * spacing, window.innerHeight));
+		}
 	}
 	
 	var loopTimer = setTimeout('SpawnDots()', 400);
