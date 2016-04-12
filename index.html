@@ -25,7 +25,7 @@ function SpawnDots()
 	for	(x = 0; x < nbX; x++)
 	{
 		nbParticles += 1;
-		particles.push(new Dot(x * spacing, window.innerHeight / 2 + 25));
+		particles.push(new Dot(x * spacing, window.innerHeight));
 	}
 	
 	var loopTimer = setTimeout('SpawnDots()', 400);
