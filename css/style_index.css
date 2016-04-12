@@ -31,7 +31,6 @@ h2
 	vertical-align: middle;
 	font-size: 40px;
 	border-bottom: 3px solid white;
-	position: absolute;
 }
 
 #subtitle
@@ -45,6 +44,7 @@ h2
 {
 	position: absolute;
 	z-index: 0;
+	margin: -250px auto 0 auto;
 }
 
 #deeppink
