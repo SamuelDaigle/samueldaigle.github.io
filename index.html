@@ -25,24 +25,30 @@ window.onblur = onBlur;
 
 function OnLoad()
 {
-	SpawnDots();
+	SpawnDots(3);
 	DrawDots();
 }
 
-function SpawnDots()
+function SpawnDots(nbX)
 {
-	var nbX = 50;
-	var spacing = 50;
+	var position = 0;
+	
+	if (nbX > 50)
+	{
+		nbX = 50;
+	}
+	
 	if	(focused)
 	{
 		for	(x = 0; x < nbX; x++)
 		{
 			nbParticles += 1;
-			particles.push(new Dot(x * spacing, window.innerHeight));
+			position = Math.floor((Math.random() * window.innerWidth) + 1);
+			particles.push(new Dot(position, window.innerHeight));
 		}
 	}
 	
-	var loopTimer = setTimeout('SpawnDots()', 400);
+	var loopTimer = setTimeout('SpawnDots(' + (nbX + 1) + ')', 400);
 }
 
 function DrawDots()
