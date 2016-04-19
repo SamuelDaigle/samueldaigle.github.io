@@ -1,5 +1,4 @@
-<script>
-	$(function () {
+$(function () {
     $('#container-half').highcharts({
         chart: {
             backgroundColor: 'rgba(0,0,0,0)',
@@ -59,5 +58,3 @@
         }]
     });
 });
-
-</script>
