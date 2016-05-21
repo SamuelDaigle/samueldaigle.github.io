@@ -1,6 +1,7 @@
 html, body 
 {
 	min-width: 1024px;
+	width: 80%;
     max-width: 100hh;
 	font-family: "Century Gothic";
 	color: rgb(225,225,225);
