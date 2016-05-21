@@ -72,7 +72,7 @@ h2
 .project-preview
 {
 	width: 100%;
-	crop: rect(33%, 0px, 33%, 0px);
+	crop: rect(100px, 0px, 100px, 0px);
 	height: auto;
 	border: 3px solid white;
 	margin: 0px auto;
