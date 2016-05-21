@@ -2,35 +2,7 @@
 <title></title>
 <link rel="stylesheet" type="text/css" href="css/style_index.css" />
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js'></script>
 <script src="js/dot.js"></script>
-<script type=”text/javascript”>
-   var ExternalURL = “sdaigleblog.wordpress.com/blog/“; // This address must not contain any leading “http://”
-   var ContentLocationInDOM = “null“; // If you’re trying to get sub-content from the page, specify the “CSS style” jQuery syntax here, otherwise set this to “null”
-
-   $(document).ready(loadContent);
-   function loadContent()
-   {
-      var QueryURL = “http://anyorigin.com/get?url=” + ExternalURL + “&callback=?”;
-      $.getJSON(QueryURL, function(data){
-         if (data && data != null && typeof data == “object” && data.contents && data.contents != null && typeof data.contents == “string”)
-         {
-            data = data.contents.replace("/<script[^>]*>[sS]*?</script>/gi",'');
-            if (data.length > 0)
-            {
-               if (ContentLocationInDOM && ContentLocationInDOM != null && ContentLocationInDOM != “null”)
-               {
-                  $(‘#queryResultContainer’).html($(ContentLocationInDOM, data));
-               }
-               else
-               {
-                  $(‘#queryResultContainer’).html(data);
-               }
-            }
-         }
-      });
-   }
-</script>
 <script type="text/javascript"> 
 var particles = [];
 var nbParticles = 0;
@@ -195,7 +167,6 @@ function DrawDots()
 		</section>
 		
 		<section>
-			<div id=”queryResultContainer”/>
 		</section>
 		
 		<section class="bigger-margin">
