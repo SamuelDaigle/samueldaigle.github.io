@@ -4,24 +4,32 @@
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js'></script>
 <script src="js/dot.js"></script>
-<script type="text/javascript">
-var MYBLOG_LIMIT = 1;
-var MYWRAPPER_CLASS = 'homeblog';
- 
-var WP={open:function(b){var a={posts:function(){var d=MYBLOG_LIMIT;var e=0;var c={all:function(g){var f=b+"/api/get_recent_posts/";f+="?count="+d+"&page="+e+"&callback=?";jQuery.getJSON(f,function(l){var k=l.posts;for(var j=0;j<k.length;j++){var h=k[j];h.createComment=function(i,m){i.postId=h.id;a.comments().create(i,m)}}g(k)})},findBySlug:function(f,h){var g=b+"/api/get_post/";g+="?slug="+f+"&callback=?";jQuery.getJSON(g,function(i){h(i.post)})},limit:function(f){d=f;return c},page:function(f){e=f;return c}};return c},pages:function(){var c={findBySlug:function(d,f){var e=b+"/api/get_page/";e+="?slug="+d+"&callback=?";jQuery.getJSON(e,function(g){f(g.page)})}};return c},categories:function(){var c={all:function(e){var d=b+"/api/get_category_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.categories)})}};return c},tags:function(){var c={all:function(e){var d=b+"/api/get_tag_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.tags)})}};return c},comments:function(){var c={create:function(f,e){var d=b+"/api/submit_comment/";d+="?post_id="+f.postId+"&name="+f.name+"&email="+f.email+"&content="+f.content+"&callback=?";jQuery.getJSON(d,function(g){e(g)})}};return c}};return a}};
- 
-var blog = WP.open('sdaigleblog.wordpress.com/blog/');
-blog.posts().all(function(posts){
-  for(var i = 0; i < posts.length; i++){
-    jQuery('.'+MYWRAPPER_CLASS).append(function(){
-      return (posts[i].thumbnail) ? '<a class="lastpost_title" href="'+posts[i].url+'">' +
-		'<h4>'+posts[i].title+'</h4>' + 
-		'</a><a href="'+posts[i].url+'"><img src="'+posts[i].thumbnail+'"/></a>' : '<a href="'+posts[i].url+'">'+
-		'<h4>'+posts[i].title+'</h4>'+
-		'</a>';
-    });
-  }
-});
+<script type=”text/javascript”>
+   var ExternalURL = “sdaigleblog.wordpress.com/blog/“; // This address must not contain any leading “http://”
+   var ContentLocationInDOM = “null“; // If you’re trying to get sub-content from the page, specify the “CSS style” jQuery syntax here, otherwise set this to “null”
+
+   $(document).ready(loadContent);
+   function loadContent()
+   {
+      var QueryURL = “http://anyorigin.com/get?url=” + ExternalURL + “&callback=?”;
+      $.getJSON(QueryURL, function(data){
+         if (data && data != null && typeof data == “object” && data.contents && data.contents != null && typeof data.contents == “string”)
+         {
+            data = data.contents.replace(/<script[^>]*>[sS]*?</script>/gi, ”);
+            if (data.length > 0)
+            {
+               if (ContentLocationInDOM && ContentLocationInDOM != null && ContentLocationInDOM != “null”)
+               {
+                  $(‘#queryResultContainer’).html($(ContentLocationInDOM, data));
+               }
+               else
+               {
+                  $(‘#queryResultContainer’).html(data);
+               }
+            }
+         }
+      });
+   }
 </script>
 <script type="text/javascript"> 
 var particles = [];
@@ -187,8 +195,7 @@ function DrawDots()
 		</section>
 		
 		<section>
-			<div class="homeblog">
-			</div>
+			<div id=”queryResultContainer”/>
 		</section>
 		
 		<section class="bigger-margin">
