@@ -73,7 +73,6 @@ h2
 {
 	width: 100%;
 	crop: rect(100px, 0px, 100px, 0px);
-	height: auto;
 	border: 3px solid white;
 	margin: 0px auto;
 	clear: both;
