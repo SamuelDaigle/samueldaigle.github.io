@@ -229,6 +229,10 @@ hr.small {
 }
 
 .portfolio-text span {
+	
+}
+
+.portfolio-span {
 	margin: auto 0px;
 	width: 100%;
 	height: 100%;
@@ -237,26 +241,7 @@ hr.small {
 	vertical-align: middle;
 }
 
-.center-span {
-	width: 100%;
-	height: 100%;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.portfolio-text span h2 {
-	margin: auto 0px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.portfolio-text span h4 {
-	margin: auto 0px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.portfolio-text:hover span {
+.portfolio-text:hover .portfolio-span {
 	visibility: visible;
 }
 
