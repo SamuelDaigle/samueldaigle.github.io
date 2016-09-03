@@ -213,7 +213,7 @@ hr.small {
 
 .box {
   background: linear-gradient(
-     white, white 50%, #333 50%, #333
+     white, white 50%, #333 90%, #333
   );
   background-size: 100% 202%;
   transition: all 0.2s ease;
