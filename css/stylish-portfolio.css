@@ -230,6 +230,8 @@ hr.small {
 
 .portfolio-text span {
 	visibility: hidden;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .portfolio-text:hover span {
