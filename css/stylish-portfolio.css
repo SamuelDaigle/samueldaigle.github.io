@@ -231,7 +231,6 @@ hr.small {
 .portfolio-text span {
 	width: 100%;
 	height: 200%;
-	display: table-cell;
 	visibility: hidden;
 	text-align: center;
 	vertical-align: middle;
