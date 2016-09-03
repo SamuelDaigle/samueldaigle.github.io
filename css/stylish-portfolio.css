@@ -205,20 +205,12 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+	background: gray;
+    transition: all 0.2s ease;
 }
 
-.box {
-  background: linear-gradient(
-     white, white 50%, #333 90%, #333
-  );
-  background-size: 100% 202%;
-  transition: all 0.2s ease;
-  animation: down-bump 0.4s ease;
-}
-
-.box:hover {
-  background-position: 100% 100%;
-  animation: up-bump 0.4s ease;
+.img-portfolio:hover {
+   background-position: 100% 100%;
 }
 
 /* Call to Action */
