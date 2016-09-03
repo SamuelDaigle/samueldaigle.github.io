@@ -200,6 +200,7 @@ hr.small {
 }
 
 .portfolio-item {
+	position:relative;
     margin-bottom: 30px;
 }
 
@@ -207,13 +208,13 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolio:before {
+.portfolio-text {
 	position:absolute;
 	background: gray;
     transition: all 0.2s ease;
 }
 
-.img-portfolio:hover {
+.portfolio-text:hover {
    background-position: 100% 100%;
 }
 
