@@ -233,7 +233,6 @@ hr.small {
 }
 
 .portfolio-span {
-	margin: auto 0px;
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
@@ -242,7 +241,11 @@ hr.small {
 }
 
 .portfolio-text:hover .portfolio-span {
+	width: 100%;
+	height: 100%;
 	visibility: visible;
+	text-align: center;
+	vertical-align: middle;
 }
 
 @keyframes up-bump {
