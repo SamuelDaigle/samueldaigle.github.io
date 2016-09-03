@@ -209,7 +209,7 @@ hr.small {
 }
 
 .portfolio-text {
-	padding: 50px 25px;
+	padding: 25px 25px;
 	color: white;
 	margin: 0 auto;
 	position: absolute;
@@ -229,6 +229,7 @@ hr.small {
 }
 
 .portfolio-text span {
+	display: table-cell;
 	visibility: hidden;
 	text-align: center;
 	vertical-align: middle;
