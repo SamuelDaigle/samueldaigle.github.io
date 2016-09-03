@@ -217,11 +217,13 @@ hr.small {
 	background: linear-gradient(
 	   rgba(0,0,0,0), rgba(0,0,0,0) 50%, rgba(30,144,255,0.75) 50%, rgba(30,144,255,0.75)
 	);
+	visibility: hidden;
 	background-size: 100% 200%;
     transition: all 0.2s ease;
 }
 
 .portfolio-text:hover {
+	visibility: visible;
     background-position: 100% 100%;
 }
 
