@@ -240,12 +240,14 @@ hr.small {
 
 .portfolio-text span h2 {
 	margin: auto 0px;
+	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .portfolio-text span h4 {
 	margin: auto 0px;
+	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 }
