@@ -241,7 +241,7 @@ hr.small {
 }
 
 .portfolio-span div {
-	margin: auto auto;
+	margin: auto 0px;
 	text-align: center;
 	vertical-align: middle;
 }
