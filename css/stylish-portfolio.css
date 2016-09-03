@@ -208,6 +208,7 @@ hr.small {
 }
 
 .img-portfolio:before {
+	position:absolute;
 	background: gray;
     transition: all 0.2s ease;
 }
