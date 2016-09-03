@@ -238,6 +238,18 @@ hr.small {
 	vertical-align: middle;
 }
 
+.portfolio-text span h2 {
+	margin: auto 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.portfolio-text span h4 {
+	margin: auto 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
 .portfolio-text:hover span {
 	visibility: visible;
 }
