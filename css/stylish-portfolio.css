@@ -226,11 +226,11 @@ hr.small {
     background-position: 100% 100%;
 }
 
-.portfolio-item span {
+.portfolio-text span {
 	visibility: hidden;
 }
 
-.portfolio-item:hover span {
+.portfolio-text:hover span {
 	visibility: visible;
 }
 
