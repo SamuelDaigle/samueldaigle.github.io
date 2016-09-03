@@ -211,6 +211,16 @@ hr.small {
     opacity: 0.8;
 }
 
+.box {
+  background: linear-gradient(
+     white, white 50%, #333 50%, #333
+  );
+  transition: all 0.2s ease;
+}
+.box:hover {
+  background-position: 100% 100%;
+}
+
 /* Call to Action */
 
 .call-to-action {
