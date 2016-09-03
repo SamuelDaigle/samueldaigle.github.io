@@ -230,7 +230,7 @@ hr.small {
 	visibility: hidden;
 }
 
-.portfolio-item span:hover {
+.portfolio-item:hover span {
 	visibility: visible;
 }
 
