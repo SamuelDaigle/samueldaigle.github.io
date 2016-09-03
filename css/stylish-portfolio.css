@@ -237,6 +237,13 @@ hr.small {
 	vertical-align: middle;
 }
 
+.center-span {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+
 .portfolio-text span h2 {
 	margin: auto 0px;
 	text-align: center;
