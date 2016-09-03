@@ -205,6 +205,9 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+}
+
+.img-portfolio:before {
 	background: gray;
     transition: all 0.2s ease;
 }
