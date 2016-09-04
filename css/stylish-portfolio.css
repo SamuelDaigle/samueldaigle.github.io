@@ -317,8 +317,8 @@ hr.small {
 /* Experience */
 
 .experience {
-	background: dimgray;
-	padding: 100px 0;
+	background: rgb(25,25,25);
+	padding: 50px 0;
 }
 
 /* Footer */
