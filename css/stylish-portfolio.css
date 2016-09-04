@@ -209,6 +209,7 @@ hr.small {
 }
 
 .portfolio-text {
+	padding: 25px;
 	color: white;
 	margin: 0 auto;
 	position: absolute;
