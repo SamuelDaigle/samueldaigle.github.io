@@ -289,6 +289,12 @@ hr.small {
     margin: 10px;
 }
 
+.education-text {
+	clear: both; 
+	width: 400px;
+	text-align: center;
+}
+
 /* Map */
 
 .map {
