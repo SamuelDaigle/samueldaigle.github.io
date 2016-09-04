@@ -239,7 +239,9 @@ hr.small {
 }
 
 .portfolio-span div {
-	margin-top: 50%;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
