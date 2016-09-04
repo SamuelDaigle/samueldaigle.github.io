@@ -236,14 +236,12 @@ hr.small {
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
-	text-align: center;
-	vertical-align: middle;
 }
 
-.portfolio-center {
-	position: absolute;
-	margin: auto;
+.portfolio-span h2 {
+	margin: 0px auto;
 }
+
 
 .portfolio-text:hover .portfolio-span {
 	visibility: visible;
