@@ -238,8 +238,8 @@ hr.small {
 	visibility: hidden;
 }
 
-.portfolio-span h2 {
-	margin: 0px auto;
+.portfolio-span div {
+	top: 50%;
 }
 
 
