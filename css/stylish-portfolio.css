@@ -282,11 +282,15 @@ hr.small {
 /* Call to Action */
 
 .education-image {
+	position:relative;
+    margin-bottom: 30px;
 	margin: 0px auto;
 	text-align: center;
 }
 
 .education-text {
+	position:relative;
+    margin-bottom: 30px;
 	margin: 0px auto;
 	width: 400px;
 	text-align: center;
