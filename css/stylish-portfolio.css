@@ -241,9 +241,8 @@ hr.small {
 }
 
 .portfolio-span div {
-	margin: 0px auto;
-	text-align: center;
-	vertical-align: middle;
+	width: 100%;
+	margin: auto;
 }
 
 .portfolio-text:hover .portfolio-span {
