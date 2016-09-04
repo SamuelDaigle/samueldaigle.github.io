@@ -264,6 +264,11 @@ hr.small {
 	visibility: visible;
 }
 
+.portfolio-text:hover .portfolio-span-high {
+	visibility: visible;
+}
+
+
 @keyframes up-bump {
   0% { padding-top: 2em; }
   50% { padding-top: 1.5em; }
