@@ -209,7 +209,6 @@ hr.small {
 }
 
 .portfolio-text {
-	padding: 25px 25px;
 	color: white;
 	margin: 0 auto;
 	position: absolute;
@@ -239,11 +238,17 @@ hr.small {
 }
 
 .portfolio-span div {
-	position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	@include vertical-align();
 }
 
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 .portfolio-text:hover .portfolio-span {
 	visibility: visible;
