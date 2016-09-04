@@ -304,7 +304,7 @@ hr.small {
 	text-align: center;
 }
 
-/* Map */
+/* Skills */
 
 #skills {
 	padding: 100px 0;
@@ -312,6 +312,13 @@ hr.small {
 
 .skills-image {
 	display:inline-block;
+}
+
+/* Experience */
+
+.experience {
+	background: dimgray;
+	padding: 100px 0;
 }
 
 /* Footer */
