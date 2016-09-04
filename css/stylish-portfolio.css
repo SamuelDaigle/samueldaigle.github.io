@@ -281,12 +281,9 @@ hr.small {
 
 /* Call to Action */
 
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
+.education-image {
+	margin: auto 0px;
+	text-align: center;
 }
 
 .education-text {
