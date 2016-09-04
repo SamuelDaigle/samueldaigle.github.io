@@ -292,6 +292,11 @@ hr.small {
 	text-align: center;
 }
 
+.education-center {
+	margin: 0px auto;
+	text-align: center;
+}
+
 /* Map */
 
 .map {
