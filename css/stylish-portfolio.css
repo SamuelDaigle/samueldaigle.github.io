@@ -238,16 +238,11 @@ hr.small {
 }
 
 .portfolio-span div {
-	@include vertical-align();
-}
-
-/* Mixin */
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .portfolio-text:hover .portfolio-span {
