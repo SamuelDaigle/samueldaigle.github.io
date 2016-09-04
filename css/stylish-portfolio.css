@@ -228,6 +228,16 @@ hr.small {
 	word-spacing:-2px;
 }
 
+.justify-center {
+	text-align: justify;
+	word-spacing:-2px;
+	position: relative;
+    top: 35%;
+    -webkit-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
+}
+
 .portfolio-text:hover {
     background-position: 100% 100%;
 }
