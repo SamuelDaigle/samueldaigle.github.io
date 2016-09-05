@@ -358,3 +358,7 @@ footer {
 	font-family: sans-serif;
 	color: dodgerblue;
 }
+
+#contact-image {
+	width: 200px;
+}
