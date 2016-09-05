@@ -329,10 +329,11 @@ footer {
 }
 
 #to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+	text-shadow: 0 0 20px #000000;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
 }
 
 #top-title {
