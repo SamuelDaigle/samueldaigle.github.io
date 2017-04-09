@@ -1337,11 +1337,11 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #ffffff;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #ffffff;
 }
 .text-success {
   color: #3c763d;
@@ -1373,7 +1373,7 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #17242a;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {

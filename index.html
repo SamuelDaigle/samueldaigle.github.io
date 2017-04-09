@@ -23,13 +23,13 @@
     <title>Samuel Daigle's portfolio</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,63 +43,74 @@
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Navigation Menu</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Expertise</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#experience" onclick=$("#menu-close").click();>Experience</a>
-            </li>
-			<li>
-                <a href="#skills" onclick=$("#menu-close").click();>Skills</a>
-            </li>
-			<li>
-                <a href="#education" onclick=$("#menu-close").click();>Education</a>
-            </li>
-			<li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Samuel Daigle</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#services">Expertise</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
+			<br>
+			<br>
             <h1 id="top-title">Samuel Daigle</h1>
-            <h3>Programmer at BKOM Studios</h3>
+			<h3 id="top-title">Computer Science Student at Laval University</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+			<br>
+			<br>
+			<ul class="list-inline">
+                <li>
+                    <a href="https://www.facebook.com/samuel.daigle.3" class="fa-color-white" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://ca.linkedin.com/in/samueldaigle" class="fa-color-white" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://sdaigleblog.wordpress.com/" class="fa-color-white" target="_blank"><i class="fa fa-wordpress fa-fw fa-3x"></i></a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Passionate about discovering</h2>
-                    <p class="lead">Personally love using new technologies and new techniques.</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+        <img class="profile" src="img/profile.jpg">
+        <h2>Passionate about discovering</h2>
+        <p class="lead">I consider myself as a Generalist Programmer focused on mobile and desktop applications. 
+		I love keeping the big picture in sight to have a well-designed architecture.</p>
     </section>
 
     <!-- Services -->
@@ -114,33 +125,30 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-mobile fa-stack-1x text-primary"></i>
-                            </span>
+									<i class="fa fa-mobile fa-stack-1x text-primary"></i>
+								</span>
                                 <h4>
                                     <strong>Mobile</strong>
                                 </h4>
-                                <p>Mobile programming for over 1 year, with Unity and Android Studio.</p>
+                                <p>Mobile programming for over 1 year with Unity, Android Studio, XCode and CLion.</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-truck fa-stack-1x text-primary"></i>
-                            </span>
+									<i class="fa fa-truck fa-stack-1x text-primary"></i>
+								</span>
                                 <h4>
                                     <strong>Published Apps</strong>
                                 </h4>
-                                <p>Professionnaly delivered 3 applications.</p>
+                                <p>Professionnaly delivered 3 applications. Worked on 8 projects.</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-wrench fa-stack-1x text-primary"></i>
-                            </span>
+									<i class="fa fa-wrench fa-stack-1x text-primary"></i>
+								</span>
                                 <h4>
                                     <strong>Flexible</strong>
                                 </h4>
@@ -150,9 +158,8 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
+									<i class="fa fa-shield fa-stack-1x text-primary"></i>
+								</span>
                                 <h4>
                                     <strong>Code quality</strong>
                                 </h4>
@@ -169,20 +176,13 @@
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <p style="font-size: 3em; color: white; text-shadow: 0 0 20px #000000;">Cooperative. Efficient. Responsible.</p>
-        </div>
-    </aside>
-
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Top Professional Apps</h2>
-                    <hr class="small">
+                    <hr class="smalldark">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
@@ -190,9 +190,7 @@
 									<div class="portfolio-span">
 										<div>
 											<h2>Disney Story Central</h2>
-											<h4 class="portfolio-justify">Part of a small team, I had to implement UI for multiple screens, 
-											add functionnalities to the book reader and maintain a good quality application.</h4>
-											<h4>(Android Studio, Java, Javascript, C++, Objective-C)</h4>
+											<h4>(Android Studio, Java, Javascript, C++, Objective-C, XCode, CLion, djinni)</h4>
 										</div>
 									</div>
 								</div>
@@ -205,8 +203,6 @@
 									<div class="portfolio-span">
 										<div>
 											<h2>Love2Learn Elmo</h2>
-											<h4 class="portfolio-justify">Started as an intern and moved to a bluetooth specialist on this project; my job was to maintain and add bluetooth functionnalities
-											to the Elmo toy as well as implement UI and sounds.</h4>
 											<h4>(Unity, C#, Java)</h4>
 										</div>
 									</div>
@@ -220,16 +216,14 @@
 				
 				<div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Top Personnal Projects</h2>
-                    <hr class="small">
+                    <hr class="smalldark">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <div class="portfolio-text">
-									<div class="portfolio-span-high">
+									<div class="portfolio-span">
 										<div>
 											<h2>MusicZ</h2>
-											<h4 class="portfolio-justify">This project marks the beginning of my video game career, a top-down survival game
-											where zombies were spawning according to the volume of the music player that came with the game.</h4>
 											<h4>(Visual Studio, VB.Net, DirectX)</h4>
 										</div>
 									</div>
@@ -240,10 +234,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <div class="portfolio-text">
-									<div class="portfolio-span-high">
+									<div class="portfolio-span">
 										<div>
 											<h2>Falling Star</h2>
-											<h4 class="portfolio-justify">3D game I made with Unreal Engine while working as a tester. It made me experiment with shaders, 3D modeling, level design as well as programming.</h4>
 											<h4>(Unreal Engine, Blueprint, Blender)</h4>
 										</div>
 									</div>
@@ -272,9 +265,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <img style="margin-bottom: 25px;" class="education-image" src="img/bkom.png">
-								<h4 class="education-text"><b>(Febuary 2016 - Present)</b></h4>
+								<h4 class="education-text"><b>(Febuary 2016 - April 2017)</b></h4>
 								<br>
-								<h4 class="education-text">Working with Unity and Android Studio, I'm always there to fill the needs on a project, either it's for UI integration, bluetooth programming, AR/VR or gameplay programming.</h4>
+								<h4 class="education-text">Worked on 8 projects filling the needs for UI integration, bluetooth programming, AR/VR and more.</h4>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -282,7 +275,7 @@
                                 <img style="margin: 30px 0px;" class="education-image" src="img/cegep.png">
 								<h4 class="education-text"><b>(September 2015 - December 2015)</b></h4>
 								<br>
-								<h4 class="education-text">Worked while studying by helping someone succeed in a programming course and by replacing a teacher the class before an exam.</h4>
+								<h4 class="education-text">Worked while studying by helping people succeed in a programming course and by replacing a teacher.</h4>
                             </div>
                         </div>
                     </div>
@@ -292,24 +285,13 @@
     </aside>
 
     <!-- Skills -->
-    <section id="skills">
-        <div class="row text-center">
-			<div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Best Skills</h2>
-                <hr class="small">
-				<div class="skills-image">
-					<div class="col-md-4">
-						<img src="img/chart-java.png">
-					</div>
-					<div class="col-md-4">
-						<img src="img/chart-csharp.png">
-					</div>
-					<div class="col-md-4">
-						<img src="img/chart-cpp.png">
-					</div>
-				</div>
-            </div>
-		</div>
+    <section class="text-center" id="skills">
+        <h2>Top Accomplishments</h2>
+        <hr class="smalldark">
+		<h4>Progressive download with REST service.</h4>
+		<h4>Develop an app with more than 200 000 downloads.</h4>
+		<h4>Improve bluetooth connectivity with a connected toy.</h4>
+		<h4>Integrate analytics and mobile advertisements.</h4>
     </section>
 	
     <!-- Education -->
@@ -339,8 +321,8 @@
     </aside>
 	
 	<!-- Company -->
-    <aside class="company">
-    </aside>
+    <!--<aside class="company">
+    </aside>-->
 
     <!-- Footer -->
     <footer id="contact">
@@ -382,80 +364,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-    </script>
 
 </body>
 
