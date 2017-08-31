@@ -174,7 +174,7 @@ hr.smalldark {
 /* About */
 
 .about {
-    padding: 40px 0 70px 0;
+    padding: 40px 25px 70px 25px;
 	max-width: 850px;
 	margin: 0px auto;
 }
