@@ -394,6 +394,20 @@ footer {
 	font-family: "Courier New";
 }
 
+#top-desc {
+	font-family: "Courier New";
+}
+
+@media (max-width: 600px) {
+#top-title {
+	font-size: 3em;
+}
+
+#top-desc {
+	font-size: 1.5em;
+}
+}
+
 #contact-image {
 	width: 200px;
 }
