@@ -234,7 +234,7 @@ hr.smalldark {
 
 .portfolio-item {
 	position:relative;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .img-portfolio {
@@ -271,7 +271,7 @@ hr.smalldark {
 }
 
 .portfolio-span {
-	padding: 25px;
+	margin: auto auto;
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
