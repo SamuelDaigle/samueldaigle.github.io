@@ -300,6 +300,69 @@ hr.smalldark {
 	visibility: visible;
 }
 
+#personal-project {
+	background: #8799b5;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	color: white;
+	margin: 25px 0px;
+}
+
+
+#personal-project-space {
+	max-width: 650px;
+	margin: auto;
+}
+
+#personal-project-space a {
+	color: white;
+}
+
+#personal-project-space a:hover{
+	color: white;
+}
+
+#personal-project-image {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+}
+
+#personal-project-desc {
+	text-align: left;
+	margin: auto;
+}
+
+#personal-project-list-wrapper {
+	text-align: center;
+}
+
+#personal-project-list {
+	text-align: left;
+	width: auto;
+	display: inline-block;
+	margin: auto;
+	font-size: 1.25em;
+}
+
+@media (max-width: 600px) {
+#personal-project-image {
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
+
+#personal-project-desc {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+}
 
 @keyframes up-bump {
   0% { padding-top: 2em; }
