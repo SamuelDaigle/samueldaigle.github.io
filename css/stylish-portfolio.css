@@ -300,6 +300,11 @@ hr.smalldark {
 	visibility: visible;
 }
 
+.portfolio-center {
+	float: none;
+    margin: 0 auto;
+}
+
 #personal-project {
 	background: #8799b5;
 	text-align: center;
@@ -433,6 +438,12 @@ hr.smalldark {
 	margin-top: -100px;
 	margin-bottom: 25px;
 	z-index: -999;
+}
+
+#blog a.button {
+	padding: 10px 25px;
+	border-radius: 10px;
+    color: white;
 }
 
 #blog-content {
