@@ -179,7 +179,7 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center portfolio-center">
+                <div class="col-lg-10 col-lg-offset-1 text-center center">
                     <h2>Top Professional Apps</h2>
                     <hr class="smalldark">
                     <div class="row">
@@ -231,7 +231,7 @@
                     </div>
                 </div>
 				
-				<div class="col-lg-7 col-lg-offset-1 text-center portfolio-center">
+				<div class="col-lg-7 col-lg-offset-1 text-center center">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
@@ -364,29 +364,37 @@
     <footer id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-					<img id="contact-image" src="img/sam.jpg">
-                    <h4><strong>Contact Info</strong>
-                    </h4>
-                    <p>9020 avenue du Plateau-de-Charlesbourg
-                        <br>Quebec, QC, CA</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:sdaiglebusiness@gmail.com">sdaiglebusiness@gmail.com</a></li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/samuel.daigle.3" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://ca.linkedin.com/in/samueldaigle" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://sdaigleblog.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Samuel Daigle</p>
+                <div class="col-lg-10 col-lg-offset-1">
+					<div class="text-center">
+						<img id="contact-image" src="img/sam.jpg">
+					</div>
+					<form id="mail-form" class="col-md-8 center" action="mailto:sdaiglebusiness@gmail.com" method="post" enctype="text/plain">
+						<h3>Contact Me</h3>
+						<div class="form-group">
+							<label>Subject:</label>
+							<input name="subject" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Body:</label>
+							<textarea name="body" class="form-control"></textarea>
+						</div>
+						<button class="btn btn-secondary mb-2" type="submit" value="Send">Send</button>
+					</form>
+					<div class="text-center">
+						<ul class="list-inline">
+							<li>
+								<a href="https://www.facebook.com/samuel.daigle.3" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+							</li>
+							<li>
+								<a href="https://ca.linkedin.com/in/samueldaigle" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+							</li>
+							<li>
+								<a href="https://sdaigleblog.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-fw fa-3x"></i></a>
+							</li>
+						</ul>
+						<hr class="small">
+						<p class="text-muted">Copyright &copy; Samuel Daigle</p>
+					</div>
                 </div>
             </div>
         </div>

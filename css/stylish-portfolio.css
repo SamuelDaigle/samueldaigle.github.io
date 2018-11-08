@@ -316,11 +316,6 @@ hr.smalldark {
 	visibility: visible;
 }
 
-.portfolio-center {
-	float: none;
-    margin: 0 auto;
-}
-
 #personal-project {
 	background: #42536f;
 	text-align: center;
@@ -532,10 +527,19 @@ footer {
 }
 }
 
+#mail-form {
+	margin: 50px auto 100px auto;
+}
+
 #contact-image {
 	width: 200px;
 }
 
 .fa-color-white {
 	color: white;
+}
+
+.center {
+	float: none;
+    margin: 0 auto;
 }
