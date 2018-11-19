@@ -543,3 +543,12 @@ footer {
 	float: none;
     margin: 0 auto;
 }
+
+.btn-primary {
+    font-size: 1.35em;
+	background-color: #253038 !important;
+	border-color: #253038 !important;
+	padding: 10px 25px;
+	border-radius: 10px;
+    color: white;
+}
